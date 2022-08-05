@@ -1,0 +1,18 @@
+h4, h1 {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 10px;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.scoreDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,0 +1,38 @@
+.cardSection {
+    background-image: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1150&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 20px;
+}
+
+.planetCard {
+    background-color: rgba(128, 128, 128, 0.575);
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr;
+}
+
+.img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.planetName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    margin: 0;
+}
