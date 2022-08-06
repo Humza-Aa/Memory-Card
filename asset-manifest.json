@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7BMemory-Card%7D/static/css/main.cfee354f.css",
+    "main.js": "/%7BMemory-Card%7D/static/js/main.c8557ca2.js",
+    "index.html": "/%7BMemory-Card%7D/index.html",
+    "main.cfee354f.css.map": "/%7BMemory-Card%7D/static/css/main.cfee354f.css.map",
+    "main.c8557ca2.js.map": "/%7BMemory-Card%7D/static/js/main.c8557ca2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfee354f.css",
+    "static/js/main.c8557ca2.js"
+  ]
+}
