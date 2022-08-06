@@ -1,30 +1,33 @@
-import "../styles/CardSection.css"
-
-const getPlanetInfo = () => {
-    return Math.floor(Math.random() * (12 + 1));
-}
+import "../styles/CardSection.css";
 
 function CardSection(props) {
-    // /console.log(props.planets[getPlanetInfo()].name);
-    return(
-        <div className="cardSection">
-            {props.planets.map(element => {
-                return(<div className="planetCard" id={element.name}>
-                  <div className="img">
-                    <img src={element.imgSrc}></img>
-                  </div>
-                  <div className="planetName">
-                    <h4>{element.name}</h4>
-                  </div>
-                </div>)
-            })}
-
-            {/* <div className="planetCard">
-                sd
-            </div> */}
-     
-        </div>
-    )
+  return (
+    <div className="cardSection">
+      {props.planetRenderOrder.map((element) => {
+        return (
+          <div
+            className="planetCard"
+            id={props.planets[element].name}
+            onClick={(e) => {
+              props.checkPlanetPicked(e.target.id)
+              props.planetClicked();
+            }}
+          >
+            <div className="img">
+              <img
+                id={props.planets[element].name}
+                src={props.planets[element].imgSrc}
+                alt="dsaf"
+              ></img>
+            </div>
+            <div className="planetName" id={props.planets[element].name}>
+              <h4>{props.planets[element].name}</h4>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default CardSection;
