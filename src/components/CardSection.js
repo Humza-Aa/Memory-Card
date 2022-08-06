@@ -1,7 +1,11 @@
 import "../styles/CardSection.css"
 
+const getPlanetInfo = () => {
+    return Math.floor(Math.random() * (12 + 1));
+}
+
 function CardSection(props) {
-    console.log(props.planets[0].name);
+    // /console.log(props.planets[getPlanetInfo()].name);
     return(
         <div className="cardSection">
             {props.planets.map(element => {
